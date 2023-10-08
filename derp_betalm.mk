@@ -23,12 +23,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from betalm device
 $(call inherit-product, device/lge/betalm/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit gms if exist
+$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
+
+# Inherit some common DerpFest stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+
 
 # Device identifiers
 
-PRODUCT_NAME := arrow_betalm
+PRODUCT_NAME := derp_betalm
 PRODUCT_DEVICE := betalm
 PRODUCT_BRAND := lge
 PRODUCT_MANUFACTURER := LGE

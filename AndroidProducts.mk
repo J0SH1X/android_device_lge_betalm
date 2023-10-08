@@ -15,8 +15,8 @@
 #
 
 PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/arrow_betalm.mk
+    $(LOCAL_DIR)/derp_betalm.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_betalm-userdebug \
-    arrow_betalm-eng
+    derp_betalm-userdebug \
+    derp_betalm-eng
