@@ -24,11 +24,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/lge/betalm/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/lineage/config/common.mk)
 
 # Device identifiers
 
-PRODUCT_NAME := arrow_betalm
+PRODUCT_NAME := lineage_betalm
 PRODUCT_DEVICE := betalm
 PRODUCT_BRAND := lge
 PRODUCT_MANUFACTURER := LGE
