@@ -3,7 +3,7 @@
 # You have to check whether device supports A/B update or not.
 
 #<src>                                                               <mnt_point>            <type>   <mnt_flags and options>                                                 <fs_mgr_flags>
-/dev/block/bootdevice/by-name/system                                 /                       ext4    ro,barrier=1,noatime                                                    wait,slotselect,avb
+/dev/block/bootdevice/by-name/system                                 /                       ext4    ro,barrier=1,noatime                                                    wait,slotselect
 /dev/block/bootdevice/by-name/metadata                               /metadata               ext4    noatime,nosuid,nodev,discard                                            wait,formattable
 # product partition is early mounted and you can find out on sm8150.dtsi
 # /dev/block/bootdevice/by-name/product                                /product                ext4    ro,nodev,barrier=1,errors=continue                                    wait,slotselect
