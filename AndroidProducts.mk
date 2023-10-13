@@ -15,8 +15,8 @@
 #
 
 PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/derp_betalm.mk
+    $(LOCAL_DIR)/lineage_betalm.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_betalm-userdebug \
-    derp_betalm-eng
+    lineage_betalm-userdebug \
+    lineage_betalm-eng
